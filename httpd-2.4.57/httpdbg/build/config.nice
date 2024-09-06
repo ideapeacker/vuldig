@@ -1,0 +1,15 @@
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--enable-expires=static" \
+"--enable-log-config=static" \
+"--prefix=/home/kali/Desktop/vuldig/httpdbg" \
+"--enable-mods-static=env cgi deflate so mime headers setenvif rewrite include alias reqtimeout Log_config" \
+"--with-apr=../apr-1.7.4" \
+"--with-apr-util=../apr-util-1.6.3" \
+"--enable-pie=no" \
+"--with-mpm=worker" \
+"--enable-mpms-shared" \
+"$@"
